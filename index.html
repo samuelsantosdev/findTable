@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find Table</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body{font-size:12px; font-family:verdana; font-color:#333;}
+            body h1{color:#069; }
+            body p{width:850px; margin:auto; position:relative; text-align:center; }
+            body #code{ margin:auto;}
+            body table{border:0px; align:center;}
+            body table thead tr th{background:#333; color:#fff; padding:3px 10px;}
+            body table tbody tr td{background:#ececec; padding:3px 10px;}
+            body table tbody tr td input{border:1px solid #ccc;}
+            body table tbody tr td a{color:#069; text-decoration: none;}
+            body table tbody tr td a:hover{color:red; text-decoration: none;}
+            body xmp{border:1px solid #999; border-radius:10px; padding:10px; color:#333; float:left; clear: both;}
+            footer{float:left; width:100%; padding:30px 0px; text-align: center; line-height:25px;}
+        </style>
+        <script src="js/jquery-2.1.0.min.js"></script>
+        <script src="js/findTable-0.1.js"></script>
+        <script>
+            $(function(){
+                $('.findTable').findTable({
+                    classInputFind: "find",//input class 
+                    areaClassFind: "findTable",// main element with table and input to search
+                    startFind: 3 //number of characters to start find
+                });
+            })
+        </script>
+        
+    </head>
+    <body>
+        <h1>Find Table</h1>
+        <br/>
+
+        <div id="code">
+
+        <div class="findTable">
+            <input type="text" name="find" class="find" id="find" value="" placeholder="Search in table"/>
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Samuel</td>
+                        <td>27</td>
+                        <td>Jundiaí</td>
+                        <td>Brasil</td>
+                        <td>SP</td>
+                    </tr>
+                    <tr>
+                        <td>Luciana</td>
+                        <td>27</td>
+                        <td>Niterói</td>
+                        <td>Brasil</td>
+                        <td>RJ</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos</td>
+                        <td>27</td>
+                        <td>São Paulo</td>
+                        <td>Brasil</td>
+                        <td>SP</td>
+                    </tr>
+                    <tr>
+                        <td>Matheus</td>
+                        <td>40</td>
+                        <td>Jundiaí</td>
+                        <td>Brasil</td>
+                        <td>SP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <br style="clear:both;"/>
+        <br style="clear:both;"/>
+        
+        <div class="findTable">
+            <input type="text" name="find" class="find" id="find" value="" placeholder="Search in table"/>
+            <br/>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Samuel</td>
+                        <td>27</td>
+                        <td>Jundiaí</td>
+                        <td>Brasil</td>
+                        <td>SP</td>
+                    </tr>
+                    <tr>
+                        <td>Luciana</td>
+                        <td>27</td>
+                        <td>Niterói</td>
+                        <td>Brasil</td>
+                        <td>RJ</td>
+                    </tr>
+                    <tr>
+                        <td>Marcos</td>
+                        <td>27</td>
+                        <td>São Paulo</td>
+                        <td>Brasil</td>
+                        <td>SP</td>
+                    </tr>
+                    <tr>
+                        <td>Matheus</td>
+                        <td>40</td>
+                        <td>Jundiaí</td>
+                        <td>Brasil</td>
+                        <td>SP</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        <h1>How to</h1>
+        
+        <xmp>
+<script src="js/jquery-2.1.0.min.js"></script>
+<script src="js/findTable-0.1.js"></script>
+<script>
+    $(function(){
+        $('.findTable').findTable({
+            classInputFind: "find",//input class 
+            areaClassFind: "findTable",// main element with table and input to search
+            startFind: 3 //number of characters to start find
+        });
+    })
+</script>
+
+</head>
+<body>
+<h1>Find Table</h1>
+<br/>
+
+<div id="code">
+
+<div class="findTable">
+    <input type="text" name="find" class="find" id="find" value="" placeholder="Search in table"/>
+    <br/>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+                <th>Country</th>
+                <th>State</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Samuel</td>
+                <td>27</td>
+                <td>Jundiaí</td>
+                <td>Brasil</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>Luciana</td>
+                <td>27</td>
+                <td>Niterói</td>
+                <td>Brasil</td>
+                <td>RJ</td>
+            </tr>
+            <tr>
+                <td>Marcos</td>
+                <td>27</td>
+                <td>São Paulo</td>
+                <td>Brasil</td>
+                <td>SP</td>
+            </tr>
+            <tr>
+                <td>Matheus</td>
+                <td>40</td>
+                <td>Jundiaí</td>
+                <td>Brasil</td>
+                <td>SP</td>
+            </tr>
+        </tbody>
+    </table>
+</div>            
+        </xmp>
+        
+        </div>
+        
+    </body>
+</html>
